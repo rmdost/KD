@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags --><title> KD NexCore ERP Technologies |  KD NexCore ERP Solutions & Global Implementation Experts</title>
+    <meta name="description" content=" KD NexCore ERP Technologies provides ERP implementation, customization, and cloud deployment services to help businesses scale efficiently. Offices in Pakistan, Dubai, and Liberia, West Africa>    <meta name="keywords" content="ERP, ERP Solutions,  KD NexCore ERP, Pakistan, Dubai, Liberia ERP Implementation, ERP Customization">
+    <meta name="author" content=" KD NexCore ERP Technologies">
+
+    <!-- Favicon (Generic fallback) --><link rel="icon" href="http://kdnexcore.com/Uploads/logo.png" type="image/png">
+
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN --><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Custom Tailwind Config --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Adding 'jamun' color as violet
+                        violet: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed', // Primary violet
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles --><style>
+        /* Use Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fafc; /* gray-50 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7c3aed; /* violet-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6d28d9; /* violet-700 */
+        }
+
+        /* Scroll Animation Classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gradient Button Base Style */
+        .btn-gradient {
+            background-image: linear-gradient(to right, #3b82f6 0%, #7c3aed 51%, #3b82f6 100%);
+            background-size: 200% auto;
+            transition: background-position 0.5s ease;
+        }
+        .btn-gradient:hover {
+            background-position: right center; /* change the direction of the change here */
+        }
+
+        /* Hero Section with background image */
+        #home {
+            position: relative;
+            overflow: hidden; /* Ensure image doesn't bleed out */
+        }
+        #home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* New, optimized hero background image */
+            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1; /* Made more subtle */
+            z-index: 0;
+        }
+        #home .max-w-7xl {
+            position: relative;
+            z-index: 1; /* Ensure content is above the background image */
+        }
+
+        /* Grayscale filter for partner logos */
+        .logo-cloud img {
+            filter: grayscale(100%) opacity(0.6);
+            transition: all 0.3s ease;
+        }
+        .logo-cloud img:hover {
+            filter: grayscale(0%) opacity(1);
+        }
+
+        /* NEW: Technology Stack Icon Styling */
+        .tech-icon {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            border-radius: 0.5rem; /* rounded-lg */
+            padding: 0.5rem; /* p-2 */
+        }
+        .tech-icon:hover {
+            transform: scale(1.1);
+            background-color: rgba(55, 65, 81, 0.5); /* gray-700/50 */
+        }
+        .tech-icon.active-tech {
+            transform: scale(1.1);
+            background-color: rgba(55, 65, 81, 0.75); /* gray-700/75 */
+            box-shadow: 0 0 15px rgba(124, 58, 237, 0.5); /* shadow-violet-500 */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Header / Navigation --><header id="main-header" class="sticky top-0 z-50 w-full transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo --><a href="#home" class="flex-shrink-0 flex items-center" aria-label=" KD NexCore ERP Technologies Home">
+                    <img class="h-10 md:h-12 w-auto" 
+                         src="http://kdnexcore.com/Uploads/logo.png" 
+                         alt=" KD NexCore ERP Technologies Logo"
+                         onerror="this.onerror=null; this.src='https://placehold.co/180x60/1f2937/9ca3af?text=KD+NexCore';">
+                </a>
+
+                <!-- Desktop Navigation --><div class="hidden lg:flex lg:items-center lg:space-x-5"> <!-- Reduced spacing slightly -->
+                    <a href="#home" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Home</a>
+                    <a href="#about" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">About</a>
+                    <a href="#solutions" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Solutions</a>
+                    <a href="#process" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Process</a>
+                    <a href="#technology" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Technology</a>
+                    <a href="#partners" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Partners</a>
+                    <a href="#testimonials" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Clients</a>
+                    <a href="#contact" class="font-medium text-gray-600 hover:text-violet-600 transition-colors text-sm">Contact</a>
+                    <a href="https://calendly.com/rmdost8/30min" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white btn-gradient ml-3">
+                        Book a Meeting
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button --><div class="lg:hidden flex items-center">
+                    <button id="menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-violet-500" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i id="menu-icon" data-lucide="menu" class="h-6 w-6 block"></i>
+                        <i id="close-icon" data-lucide="x" class="h-6 w-6 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Panel --><div id="mobile-menu" class="hidden lg:hidden bg-white shadow-lg border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">About</a>
+                <a href="#solutions" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Solutions</a>
+                <a href="#process" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Process</a>
+                <a href="#technology" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Technology</a>
+                <a href="#partners" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Partners</a>
+                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Clients</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-violet-600 hover:bg-gray-50">Contact</a>
+                <a href="https://calendly.com/rmdost8/30min" target="_blank" rel="noopener noreferrer"
+                   class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white btn-gradient mt-2">
+                    Book a Meeting
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content --><main>
+
+        <!-- Hero Section --><section id="home" class="bg-gradient-to-br from-blue-50 via-violet-50 to-white pt-32 pb-20 md:pt-48 md:pb-32 flex items-center min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-80px)]">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- LEFT: Text -->
+        <div class="fade-in-up text-center lg:text-left">
+            <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block">Smart  KD NexCore ERP & Cloud Services</span>
+                <span class="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                    for a Smarter Business
+                </span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-600">
+                Streamline your operations and scale globally with  KD NexCore ERP Technologies.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
+                <a href="#meeting" class="btn-gradient px-8 py-3 rounded-md text-white font-medium">
+                    Book a Free Consultation
+                </a>
+                <a href="#contact" class="px-8 py-3 rounded-md border border-violet-600 text-violet-600">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+
+<!-- RIGHT: ERP & Cloud Poster (Enhanced) -->
+<div class="fade-in-up relative flex justify-center lg:justify-end group">
+
+    <!-- Glow Background -->
+    <div class="absolute -top-16 -right-16 w-80 h-80 bg-violet-400 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute -bottom-16 -left-16 w-80 h-80 bg-blue-400 rounded-full blur-3xl opacity-30"></div>
+
+    <!-- Card -->
+    <div class="relative bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg
+                rounded-2xl p-5 border border-white/40
+                shadow-[0_25px_60px_rgba(124,58,237,0.35)]
+                transition-all duration-500
+                group-hover:-translate-y-2 group-hover:shadow-[0_35px_80px_rgba(124,58,237,0.45)]">
+
+        <!-- Desktop Image -->
+        <img
+            src="http://kdnexcore.com/Uploads/erp-cloud-poster.jpg"
+            alt="ERP & Cloud Services by  KD NexCore ERP Technologies"
+            class="hidden sm:block w-full max-w-md rounded-xl object-cover"
+            loading="lazy"
+        />
+
+        <!-- Mobile Image (optional lighter version later) -->
+        <img
+            src="http://kdnexcore.com/Uploads/erp-cloud-poster.jpg"
+            alt="ERP & Cloud Services"
+            class="block sm:hidden w-full rounded-xl object-cover"
+            loading="lazy"
+        />
+
+        <!-- Floating Icons -->
+        <div class="absolute -top-6 -left-6 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg">
+            <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </div>
+
+        <div class="absolute top-1/3 -right-6 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M3 15a4 4 0 004 4h10a4 4 0 000-8 5 5 0 00-9-3"/>
+            </svg>
+        </div>
+
+        <div class="absolute -bottom-6 left-1/4 bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M12 3l8 4v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4z"/>
+            </svg>
+        </div>
+
+        <!-- Caption -->
+        <div class="mt-5 text-center">
+            <span class="text-sm font-semibold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                ERP • Cloud Hosting • Automation • Security
+            </span>
+        </div>
+
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+        </section>
+
+        <!-- NEW: Trusted By Section -->
+      <section id="partners" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Heading -->
+        <div class="text-center">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                Trusted by Industry Leaders
+            </h3>
+        </div>
+
+        <!-- Logo Cloud -->
+        <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6 items-center logo-cloud">
+            <div class="flex justify-center fade-in-up">
+                <img class="h-10"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynnKDOGgniBvNyK48mXz1iAE0Dz23bYns-g&s"
+                     alt="Frappe">
+            </div>
+
+            <div class="flex justify-center fade-in-up" style="--delay: 50ms;">
+                <img class="h-10"
+                     src="https://globalteckz.com/wp-content/uploads/2025/07/ERPnext-1.png?color=indigo"
+                     alt="ERP">
+            </div>
+
+            <div class="flex justify-center fade-in-up" style="--delay: 100ms;">
+                <img class="h-12"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                     alt="Amazon Web Services">
+            </div>
+
+            <div class="flex justify-center fade-in-up" style="--delay: 150ms;">
+                <img class="h-10"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+                     alt="Google Cloud">
+            </div>
+
+            <div class="flex justify-center fade-in-up" style="--delay: 200ms;">
+                <img class="h-10"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                     alt="Python">
+            </div>
+
+            <div class="flex justify-center fade-in-up" style="--delay: 250ms;">
+                <img class="h-10"
+                     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                     alt="MySQL">
+            </div>
+        </div>
+
+      <!-- Government Collaboration Highlight -->
+<div class="mt-20 max-w-6xl mx-auto fade-in-up">
+    <div class="relative bg-gradient-to-br from-violet-50 via-white to-blue-50 rounded-2xl shadow-xl overflow-hidden">
+
+        <!-- Accent Glow -->
+        <div class="absolute -top-24 -right-24 w-72 h-72 bg-violet-200 rounded-full blur-3xl opacity-40"></div>
+        <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-40"></div>
+
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 lg:p-10">
+
+            <!-- Image -->
+            <div class="rounded-xl overflow-hidden shadow-lg">
+                <img
+                    src="http://kdnexcore.com/Uploads/government-meeting.jpg"
+                    alt="KD NexCore KD NexCore ERP Technologies meeting with Government of Sindh"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                >
+            </div>
+
+            <!-- Content -->
+            <div class="text-center lg:text-left">
+                <span class="inline-block mb-3 px-4 py-1 text-xs font-semibold uppercase tracking-wider rounded-full
+                             bg-violet-100 text-violet-700">
+                    Government Collaboration
+                </span>
+
+                <h4 class="text-2xl font-extrabold text-gray-900 leading-tight">
+                    Strategic Engagement with Government of Sindh
+                </h4>
+
+                <p class="mt-4 text-base text-gray-600">
+                     KD NexCore ERP Technologies actively collaborates with public-sector stakeholders to
+                    modernize operations through ERP-driven digital transformation, automation,
+                    and enterprise-grade technology solutions.
+                </p>
+
+                <div class="mt-6">
+                    <span class="inline-flex items-center gap-2 text-sm font-medium text-violet-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Trusted for enterprise & government-grade ERP solutions
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+
+
+        <!-- About Us Section --><section id="about" class="py-16 md:py-24 bg-gray-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div class="fade-in-up">
+                        <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">About Us</span>
+                        <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                            Empowering Your Business with  KD NexCore ERP
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Delivering powerful, cost-efficient  KD NexCore ERP & Cloud Services solutions to drive business growth and operational excellence.
+                        </p>
+                        <p class="mt-4 text-base text-gray-600">
+                             KD NexCore ERP Technologies specializes in providing comprehensive  KD NexCore ERP & Cloud Services that empower organizations to streamline their operations, improve productivity, and achieve sustainable growth.
+                        </p>
+                        <p class="mt-4 text-base text-gray-600">
+                            With our Head Office in Karachi, Pakistan, and international branches in Dubai (UAE) and Liberia Africa, we are perfectly positioned to serve clients globally, offering expert  KD NexCore ERP implementation, customization, and dedicated support.
+                        </p>
+                    </div>
+                    <div class="fade-in-up" style="--delay: 150ms;">
+                        <!-- FIXED Image URL + lazy loading -->
+                        <img class="rounded-xl shadow-2xl w-full h-auto object-cover aspect-[4/3]" 
+                             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt=" KD NexCore ERP Technologies global team collaborating"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions / Services Section --><section id="solutions" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Our Solutions</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        A Full Suite of  KD NexCore ERP & Cloud Services
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        From initial setup to ongoing support, we cover every aspect of your  KD NexCore ERP journey.
+                    </p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 --><div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up">
+                        <i data-lucide="database-zap" class="w-12 h-12 text-violet-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900"> KD NexCore ERP Implementation</h3>
+                        <p class="mt-2 text-base text-gray-600">End-to-end setup and configuration of  KD NexCore ERP, tailored to your precise business needs.</p>
+                    </div>
+                    <!-- Service Card 2 --><div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up" style="--delay: 100ms;">
+                        <i data-lucide="settings-2" class="w-12 h-12 text-violet-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900"> KD NexCore ERP Customization</h3>
+                        <p class="mt-2 text-base text-gray-600">Modifying and extending  KD NexCore ERP features to match your unique workflows and processes.</p>
+                    </div>
+                    <!-- Service Card 3 --><div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up" style="--delay: 200ms;">
+                        <i data-lucide="cloud" class="w-12 h-12 text-violet-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Cloud Hosting & Deployment</h3>
+                        <p class="mt-2 text-base text-gray-600">Secure, scalable, and reliable cloud hosting solutions to ensure your ERP is always available.</p>
+                    </div>
+                    <!-- Service Card 4 --><div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up">
+                        <i data-lucide="workflow" class="w-12 h-12 text-violet-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Integration Services</h3>
+                        <p class="mt-2 text-base text-gray-600">Seamlessly connect  KD NexCore ERP with your other essential business applications and third-party services.</p>
+                    </div>
+                    <!-- Service Card 5 --><div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up" style="--delay: 100ms;">
+                        <i data-lucide="users" class="w-12 h-12 text-violet-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Training & Support</h3>
+                        <p class="mt-2 text-base text-gray-600">Comprehensive training for your team and 24/7 technical support to resolve any issues quickly.</p>
+                    </div>
+                    <!-- Service Card 6 --><div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 fade-in-up" style="--delay: 200ms;">
+                        <i data-lucide="bot" class="w-12 h-12 text-violet-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Business Process Automation</h3>
+                        <p class="mt-2 text-base text-gray-600">Identify bottlenecks and automate repetitive tasks to boost efficiency and reduce errors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Process Section --><section id="process" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Our Process</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Your Path to Success
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        We follow a proven, structured approach to ensure your project is a success from start to finish.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 --><div class="bg-white p-6 rounded-lg shadow-lg text-center fade-in-up">
+                        <i data-lucide="search" class="w-12 h-12 text-violet-600 mb-4 mx-auto"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">1. Discovery & Analysis</h3>
+                        <p class="mt-2 text-base text-gray-600">We start by understanding your unique business requirements, goals, and pain points.</p>
+                    </div>
+                    <!-- Step 2 --><div class="bg-white p-6 rounded-lg shadow-lg text-center fade-in-up" style="--delay: 100ms;">
+                        <i data-lucide="settings" class="w-12 h-12 text-violet-600 mb-4 mx-auto"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">2. Implementation & Customization</h3>
+                        <p class="mt-2 text-base text-gray-600">Our experts configure and customize  KD NexCore ERP to perfectly fit your workflows.</p>
+                    </div>
+                    <!-- Step 3 --><div class="bg-white p-6 rounded-lg shadow-lg text-center fade-in-up" style="--delay: 200ms;">
+                        <i data-lucide="graduation-cap" class="w-12 h-12 text-violet-600 mb-4 mx-auto"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">3. Training & Onboarding</h3>
+                        <p class="mt-2 text-base text-gray-600">We provide comprehensive training to ensure your team can leverage the new system effectively.</p>
+                    </div>
+                    <!-- Step 4 --><div class="bg-white p-6 rounded-lg shadow-lg text-center fade-in-up" style="--delay: 300ms;">
+                        <i data-lucide="life-buoy" class="w-12 h-12 text-violet-600 mb-4 mx-auto"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">4. Go-Live & Support</h3>
+                        <p class="mt-2 text-base text-gray-600">We manage the launch and provide ongoing 24/7 support to ensure smooth operation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section --><section id="industries" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Our Expertise</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Industries We Serve
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        We provide specialized  KD NexCore ERP & Cloud Services for a diverse range of sectors.
+                    </p>
+                </div>
+                <div class="mt-12 flex flex-wrap justify-center gap-3 md:gap-4 fade-in-up" style="--delay: 100ms;">
+                    <span class="bg-violet-100 text-violet-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Manufacturing</span>
+                    <span class="bg-violet-100 text-violet-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Trading</span>
+                    <span class="bg-violet-100 text-violet-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Retail</span>
+                    <span class="bg-violet-100 text-violet-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Education</span>
+                    <span class="bg-violet-100 text-violet-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Healthcare</span>
+                    <span class="bg-violet-100 text-violet-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Construction</span>
+                    <span class="bg-gray-100 text-gray-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">And More...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section --><section id="why-us" class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-blue-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                    <div class="fade-in-up md:order-2">
+                        <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Why Choose Us</span>
+                        <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                            Your Trusted Global  KD NexCore ERP Partner
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            We combine technical expertise with a client-first approach to deliver results that matter.
+                        </p>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Certified  KD NexCore ERP Experts</h4>
+                                    <p class="text-gray-600">Our team consists of certified professionals with deep knowledge of the  KD NexCore ERP framework.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Global Presence, Local Support</h4>
+                                    <p class="text-gray-600">With offices in Asia, the Middle East, and Africa, we offer world-class service with a local touch.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Cost-Efficient & Scalable</h4>
+                                    <p class="text-gray-600">We deliver powerful solutions that grow with your business, ensuring a high return on investment.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">100% Client Satisfaction</h4>
+                                    <p class="text-gray-600">Your success is our priority. We are committed to delivering excellence and building long-term partnerships.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fade-in-up md:order-1" style="--delay: 150ms;">
+                        <!-- FIXED Image URL + lazy loading -->
+                        <img class="rounded-xl shadow-2xl w-full h-auto object-cover aspect-[4/3]" 
+                             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Business handshake signifying partnership"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section --><section id="technology" class="py-16 md:py-24 bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Centered Title -->
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-400 uppercase tracking-wide">Our Technology</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-white sm:text-4xl">
+                        Powered by Modern Technologies
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+                        Modern technologies to enable automation, data analytics, and AI.
+                    </p>
+                </div>
+
+                <!-- New Layout: Icons on Left, Card on Right -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                    
+                    <!-- Column 1: Icon Grid (matches screenshot) -->
+                    <div id="tech-icons-grid" class="md:col-span-2 grid grid-cols-5 gap-y-10 gap-x-8 items-start justify-items-center fade-in-up" style="--delay: 100ms;">
+                        
+                        <!-- Row 1 of Icons -->
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="python" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">Python</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="frappe" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynnKDOGgniBvNyK48mXz1iAE0Dz23bYns-g&s" alt="Frappe" class="h-12 w-12 filter invert" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">Frappe</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="javascript" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="html5" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">HTML5</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="css3" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">CSS3</span>
+                        </div>
+
+                        <!-- Row 2 of Icons -->
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="database" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">Database</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="firebase" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">Firebase</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="nodejs" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">Node.js</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="react" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">React</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center tech-icon" data-tech="redis" role="button" tabindex="0">
+                            <!-- FIXED Image URL -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="Redis" class="h-12 w-12" loading="lazy">
+                            <span class="mt-2 text-sm text-gray-400">Redis</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Frappe Card (Content will be dynamic) -->
+                    <div id="tech-display-card" class="bg-gray-800 p-8 rounded-lg shadow-lg fade-in-up" style="--delay: 200ms;">
+                        <h4 id="tech-title" class="text-xl font-semibold text-white">Frappe Framework</h4>
+                        <p id="tech-description" class="mt-2 text-gray-300">Frappe is a full-stack web framework, commonly used with the  KD NexCore ERP software suite, written in Python and JavaScript.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies (Portfolio) Section --><section id="portfolio" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Portfolio</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Our Success Stories
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        See how we've helped businesses like yours transform their operations.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Placeholder Card 1 --><div class="border border-gray-200 rounded-lg p-6 text-center shadow-sm fade-in-up">
+                        <i data-lucide="factory" class="w-12 h-12 text-violet-500 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Manufacturing Client</h3>
+                        <p class="mt-2 text-gray-600">Streamlined production and inventory management.</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-4">Case Study Coming Soon</span>
+                    </div>
+                    <!-- Placeholder Card 2 --><div class="border border-gray-200 rounded-lg p-6 text-center shadow-sm fade-in-up" style="--delay: 100ms;">
+                        <i data-lucide="shopping-cart" class="w-12 h-12 text-violet-500 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Retail & Trading Co.</h3>
+                        <p class="mt-2 text-gray-600">Integrated multi-channel sales and procurement.</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-4">Case Study Coming Soon</span>
+                    </div>
+                    <!-- Placeholder Card 3 --><div class="border border-gray-200 rounded-lg p-6 text-center shadow-sm fade-in-up" style="--delay: 200ms;">
+                        <i data-lucide="graduation-cap" class="w-12 h-12 text-violet-500 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900">Educational Institute</h3>
+                        <p class="mt-2 text-gray-600">Managed student lifecycle and finances in one platform.</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full mt-4">Case Study Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section --><section id="testimonials" class="py-16 md:py-24 bg-gradient-to-b from-blue-50 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Testimonials</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        What Our Clients Say
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        We are proud to build solutions that our clients love.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 --><div class="bg-white p-6 rounded-lg shadow-lg fade-in-up">
+                        <div class="flex items-center mb-4">
+                            <!-- FIXED Image URL + lazy loading -->
+                            <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Client Avatar" loading="lazy">
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Ahmed Hassan</h4>
+                                <p class="text-sm text-gray-500">CEO, Manufacturing Co.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">" KD NexCore ERP's  KD NexCore ERP solution transformed our operations. Their support is top-notch."</p>
+                        <p class="text-yellow-500 mt-2">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                    <!-- Testimonial 2 --><div class="bg-white p-6 rounded-lg shadow-lg fade-in-up" style="--delay: 100ms;">
+                        <div class="flex items-center mb-4">
+                            <!-- FIXED Image URL + lazy loading -->
+                            <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Client Avatar" loading="lazy">
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Sarah Khan</h4>
+                                <p class="text-sm text-gray-500">Director, Retail Group</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"The customization and integration services were seamless. Highly recommended."</p>
+                        <p class="text-yellow-500 mt-2">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                    <!-- Testimonial 3 --><div class="bg-white p-6 rounded-lg shadow-lg fade-in-up" style="--delay: 200ms;">
+                        <div class="flex items-center mb-4">
+                            <!-- FIXED Image URL + lazy loading -->
+                            <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Client Avatar" loading="lazy">
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Fatima Ali</h4>
+                                <p class="text-sm text-gray-500">Manager, Healthcare Clinic</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"A professional team that understands business needs and delivers results."</p>
+                        <p class="text-yellow-500 mt-2">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section --><section id="blog" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Our Blog</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Latest News & Insights
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        Stay updated with the latest trends in ERP and business technology.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 --><div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt=" KD NexCore ERP benefits for SMEs" class="h-48 w-full object-cover" loading="lazy">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">Dec 18, 2024</p>
+                            <h3 class="mt-2 text-xl font-semibold text-gray-900">Why  KD NexCore ERP is the Future for SMEs</h3>
+                            <p class="mt-2 text-base text-gray-600">How SMEs unlock scalability and reduce costs with  KD NexCore ERP.</p>
+                            <button data-blog-id="post1" class="mt-4 inline-block text-violet-600 hover:text-violet-700 font-medium">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 --><div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up" style="--delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Automation trends" class="h-48 w-full object-cover" loading="lazy">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">Nov 05, 2024</p>
+                            <h3 class="mt-2 text-xl font-semibold text-gray-900">Top 5 Automation Trends for 2026</h3>
+                            <p class="mt-2 text-base text-gray-600">From RPA to AI copilots—what matters for operations.</p>
+                            <button data-blog-id="post2" class="mt-4 inline-block text-violet-600 hover:text-violet-700 font-medium">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 --><div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up" style="--delay: 200ms;">
+                        <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Cloud vs On-Prem" class="h-48 w-full object-cover" loading="lazy">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">Oct 12, 2024</p>
+                            <h3 class="mt-2 text-xl font-semibold text-gray-900">Cloud Deployment vs. On-Premise</h3>
+                            <p class="mt-2 text-base text-gray-600">Cost, performance, and security trade-offs simplified.</p>
+                            <button data-blog-id="post3" class="mt-4 inline-block text-violet-600 hover:text-violet-700 font-medium">Read More &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 4 --><div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt=" KD NexCore ERP implementation steps" class="h-48 w-full object-cover" loading="lazy">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">Sep 22, 2024</p>
+                            <h3 class="mt-2 text-xl font-semibold text-gray-900"> KD NexCore ERP Implementation: A Practical Guide</h3>
+                            <p class="mt-2 text-base text-gray-600">From discovery to go-live—key milestones that matter.</p>
+                            <button data-blog-id="post4" class="mt-4 inline-block text-violet-600 hover:text-violet-700 font-medium">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 5 --><div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up" style="--delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Customizations" class="h-48 w-full object-cover" loading="lazy">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">Aug 15, 2024</p>
+                            <h3 class="mt-2 text-xl font-semibold text-gray-900">Customizing  KD NexCore ERP the Right Way</h3>
+                            <p class="mt-2 text-base text-gray-600">Best practices to keep upgrades smooth and safe.</p>
+                            <button data-blog-id="post5" class="mt-4 inline-block text-violet-600 hover:text-violet-700 font-medium">Read More &rarr;</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 6 --><div class="bg-white rounded-lg shadow-lg overflow-hidden fade-in-up" style="--delay: 200ms;">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Analytics and reports" class="h-48 w-full object-cover" loading="lazy">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">Jul 02, 2024</p>
+                            <h3 class="mt-2 text-xl font-semibold text-gray-900">Turning  KD NexCore ERP Data into Decisions</h3>
+                            <p class="mt-2 text-base text-gray-600">Dashboards, KPIs, and analytics that drive growth.</p>
+                            <button data-blog-id="post6" class="mt-4 inline-block text-violet-600 hover:text-violet-700 font-medium">Read More &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Modal -->
+        <div id="blog-modal" class="fixed inset-0 z-50 hidden">
+            <div id="blog-overlay" class="absolute inset-0 bg-black/60"></div>
+            <div class="relative mx-auto my-10 w-[92%] max-w-3xl bg-white rounded-lg shadow-2xl overflow-hidden">
+                <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-gray-50">
+                    <div>
+                        <p id="modal-date" class="text-xs text-gray-500">—</p>
+                        <h3 id="modal-title" class="text-xl font-semibold text-gray-900">—</h3>
+                    </div>
+                    <button id="blog-close" class="text-gray-500 hover:text-gray-700" aria-label="Close">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                <img id="modal-image" src="" alt="Blog image" class="w-full h-64 object-cover">
+                <div id="modal-content" class="px-6 py-6 prose max-w-none">
+                    <!-- dynamic content -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="py-16 bg-gradient-to-r from-blue-50 to-violet-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-2xl font-bold text-gray-900">Subscribe to updates</h3>
+                <p class="mt-2 text-gray-600">Get our latest  KD NexCore ERP insights directly in your inbox.</p>
+                <form action="https://formspree.io/f/xldolaka" method="POST" class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+                    <input type="email" name="newsletter_email" required placeholder="Your email address" class="w-full sm:w-2/3 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                    <button type="submit" class="px-6 py-3 rounded-md text-white btn-gradient">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- NEW: Call to Action Section -->
+        <section id="cta" class="bg-gradient-to-r from-blue-600 to-violet-600">
+            <div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl fade-in-up">
+                    Ready to Transform Your Business?
+                </h2>
+                <p class="mt-4 text-lg text-blue-100 fade-in-up" style="--delay: 100ms;">
+                    Let our expert team show you how  KD NexCore ERP can streamline your operations and drive growth.
+                </p>
+                <div class="mt-8 fade-in-up" style="--delay: 200ms;">
+                    <a href="#meeting"
+                       class="inline-flex items-center justify-center px-8 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-blue-700 bg-white hover:bg-blue-50 transition-transform hover:scale-105">
+                        Schedule Your Free Consultation Today
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Book a Meeting Section --><section id="meeting" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center fade-in-up">
+                    <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Schedule a Call</span>
+                    <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Book Your Free Consultation
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                        Choose a time slot that works for you. We look forward to speaking with you.
+                    </p>
+                </div>
+                
+                <!-- Calendly Embed --><div class="mt-12 rounded-lg shadow-2xl overflow-hidden fade-in-up relative" style="--delay: 150ms; padding-bottom: 700px; height: 0;">
+                    <iframe src="https://calendly.com/rmdost8/30min"
+                            width="100%"
+                            height="100%"
+                            style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            loading="lazy"
+                            title="Schedule a meeting with  KD NexCore ERP Technologies">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section --><section id="contact" class="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                    <!-- Contact Info --><div class="fade-in-up">
+                        <span class="text-sm font-semibold text-violet-600 uppercase tracking-wide">Contact Us</span>
+                        <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                            Get in Touch
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            We're ready to help you grow. Contact us today for a free consultation or to discuss your project.
+                        </p>
+                        
+                        <div class="mt-10 space-y-6">
+                            <!-- Phone --><div class="flex items-start">
+                                <i data-lucide="smartphone" class="flex-shrink-0 h-6 w-6 text-violet-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Phone / WhatsApp</h4>
+                                    <a href="https://wa.me/923011191084" target="_blank" class="text-gray-600 hover:text-violet-600"> PK +92 308 2015344</a>
+                                    <a href="https://wa.me/447352636243" target="_blank" class="block text-gray-600 hover:text-violet-600 mt-1">  🇬🇧 +44 7352 636243 </a>
+                                </div>
+                            </div>
+                            <!-- Schedule --><div class="flex items-start">
+                                <i data-lucide="calendar" class="flex-shrink-0 h-6 w-6 text-violet-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Schedule a Meeting</h4>
+                                    <a href="#meeting" class="text-gray-600 hover:text-violet-600">Book a 30-min call</a>
+                                </div>
+                            </div>
+                            <!-- Pakistan Office --><div class="flex items-start">
+                                <i data-lucide="map-pin" class="flex-shrink-0 h-6 w-6 text-violet-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Karachi, Pakistan</h4>
+                                    <p class="text-gray-600">Suite No.817, 8th Floor, Uni Tower, I.I Chundrigar Road, Karachi.</p>
+                                </div>
+                            </div>
+                            <!-- Dubai Office --><div class="flex items-start">
+                                <i data-lucide="map-pin" class="flex-shrink-0 h-6 w-6 text-violet-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Dubai, United Arab Emirates</h4>
+                                    <p class="text-gray-600">Emarat Atrium – 1st Floor – Unit 147 Sheikh Zayed Rd, Dubai.</p>
+                                </div>
+                            </div> <!-- FIXED BUG: Was </li> before -->
+                            <!-- Liberia ffice--><div class="flex items-start">
+                                <i data-lucide="map-pin" class="flex-shrink-0 h-6 w-6 text-violet-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Liberia, West Africa</h4>
+                                    <p class="text-gray-600">Devine Houzz, 5th Floor, Airfield Short-Cut Sinkor, Monrovia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form --><div class="bg-white p-8 rounded-lg shadow-xl fade-in-up" style="--delay: 150ms;">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                        <form action="https://formspree.io/f/xldolaka" method="POST">
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" name="name" id="name" required
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" name="email" id="email" required
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700">Company (Optional)</label>
+                                    <input type="text" name="company" id="company"
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                    <textarea id="message" name="message" rows="4" required
+                                              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-violet-500"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit"
+                                            class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white btn-gradient focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition-colors">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-gray-900 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Column 1: Logo & About --><div class="md:col-span-5 lg:col-span-4">
+                    <a href="#home" class="inline-block mb-4" aria-label=" KD NexCore ERP Technologies Home">
+                        <img class="h-10 w-auto" 
+                             src="http://kdnexcore.com/Uploads/logo.png" 
+                             alt=" KD NexCore ERP Technologies Logo"
+                             onerror="this.onerror=null; this.src='https://placehold.co/180x60/1f2937/9ca3af?text=KD+NexCore';">
+                    </a>
+                    <p class="text-sm text-gray-300">
+                        Delivering powerful, cost-efficient  KD NexCore ERP & Cloud Services solutions to drive business growth and operational excellence globally.
+                    </p>
+                    <div class="flex gap-5 mt-6">
+                        <a href="https://wa.me/923011191084" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="WhatsApp">
+                            <i data-lucide="smartphone" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="mailto:info@kdnexcore.com" class="text-gray-400 hover:text-white transition-colors" aria-label="Email">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links --><div class="md:col-span-3 lg:col-span-2">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#home" class="text-sm hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-sm hover:text-white transition-colors">About</a></li>
+                        <li><a href="#solutions" class="text-sm hover:text-white transition-colors">Solutions</a></li>
+                        <li><a href="#process" class="text-sm hover:text-white transition-colors">Process</a></li>
+                        <li><a href="#technology" class="text-sm hover:text-white transition-colors">Technology</a></li>
+                        <li><a href="#partners" class="text-sm hover:text-white transition-colors">Partners</a></li>
+                        <li><a href="#testimonials" class="text-sm hover:text-white transition-colors">Clients</a></li>
+                        <li><a href="#contact" class="text-sm hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Offices --><div class="md:col-span-4 lg:col-span-3">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Locations</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start text-sm">
+                            <i data-lucide="map-pin" class="flex-shrink-0 w-4 h-4 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-200">Pakistan (HQ):</strong>
+                                <p>Suite No.817, 8th Floor, Uni Tower, I.I Chundrigar Road, Karachi.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <i data-lucide="map-pin" class="flex-shrink-0 w-4 h-4 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-200">Dubai, UAE:</strong>
+                                <p>Emarat Atrium – 1st Floor – Unit 147 Sheikh Zayed Rd, Dubai.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start text-sm">
+                            <i data-lucide="map-pin" class="flex-shrink-0 w-4 h-4 mr-3 mt-1"></i>
+                            <div>
+                                <strong class="text-gray-200">Liberia, West Africa</strong>
+                                <p>Devine Houzz, 5th Floor, Airfield Short-Cut Sinkor, Monrovia.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                 <!-- Column 4: Contact --><div class="md:col-span-4 lg:col-span-3">
+                   <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Get in Touch</h3>
+
+<ul class="mt-4 space-y-3">
+    <!-- Phone / WhatsApp -->
+    <li class="flex items-start text-sm">
+        <i data-lucide="smartphone" class="flex-shrink-0 w-4 h-4 mr-3 mt-1"></i>
+        <div class="flex flex-col">
+            <!-- Pakistan -->
+            <a href="https://wa.me/923082015344"
+               target="_blank"
+               class="hover:text-white transition-colors">
+                🇵🇰 +92 308 201 5344
+            </a>
+
+            <!-- UK -->
+            <a href="https://wa.me/447352636243"
+               target="_blank"
+               class="hover:text-white transition-colors mt-1">
+                🇬🇧 +44 7352 636243
+            </a>
+        </div>
+    </li>
+
+    <!-- Email -->
+    <li class="flex items-center text-sm">
+        <i data-lucide="mail" class="flex-shrink-0 w-4 h-4 mr-3"></i>
+        <a href="mailto:info@kdnexcore.com"
+           class="hover:text-white transition-colors">
+            info@kdnexcore.com
+        </a>
+    </li>
+
+    <!-- Schedule -->
+    <li class="flex items-center text-sm">
+        <i data-lucide="calendar" class="flex-shrink-0 w-4 h-4 mr-3"></i>
+        <a href="#meeting"
+           class="hover:text-white transition-colors">
+            Schedule a Call
+        </a>
+    </li>
+</ul>
+
+                </div>
+
+                <!-- Column 5: Legal -->
+                <div class="md:col-span-4 lg:col-span-3">
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="privacy-policy.html" class="text-sm hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html" class="text-sm hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="dmca.html" class="text-sm hover:text-white transition-colors">DMCA Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright --><div class="mt-12 border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2026  KD NexCore ERP Technologies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Icon --><a href="https://wa.me/923011191084" target="_blank" rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg z-40 transition-transform hover:scale-110 hover:bg-green-600"
+       aria-label="Chat on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 invert-0" />
+    </a>
+
+    <!-- JavaScript --><script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        }
+        
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a, #main-header a[href^="#"]').forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    menuBtn.click();
+                }
+            });
+        });
+        
+        // Close mobile menu on desktop resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024 && !mobileMenu.classList.contains('hidden')) {
+                menuBtn.click();
+            }
+        });
+
+        // Sticky Header Background on Scroll
+        const header = document.getElementById('main-header');
+        if (header) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    header.classList.add('bg-white/95', 'backdrop-blur-sm', 'shadow-md');
+                } else {
+                    header.classList.remove('bg-white/95', 'backdrop-blur-sm', 'shadow-md');
+                }
+            });
+        }
+
+        // Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Apply delay based on CSS custom property or index
+                    const delay = entry.target.style.getPropertyValue('--delay') || `0ms`; // Removed default staggered delay
+                    entry.target.style.transitionDelay = delay;
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // --- NEW: Technology Stack Interaction ---
+        const techDescriptions = {
+            'python': {
+                title: 'Python',
+                description: 'A versatile, high-level programming language used for backend development, data science, and automation, forming the core of the Frappe Framework.'
+            },
+            'frappe': {
+                title: 'Frappe Framework',
+                description: 'Frappe is a full-stack web framework, commonly used with the  KD NexCore ERP software suite, written in Python and JavaScript.'
+            },
+            'javascript': {
+                title: 'JavaScript',
+                description: 'The programming language of the web. We use it for dynamic frontend interactions, custom scripts, and building responsive user interfaces.'
+            },
+            'html5': {
+                title: 'HTML5',
+                description: 'The standard markup language for documents designed to be displayed in a web browser. It forms the skeleton of all web applications.'
+            },
+            'css3': {
+                title: 'CSS3',
+                description: 'Cascading Style Sheets is used for styling the presentation of web pages, including colors, layout, and fonts, making applications beautiful.'
+            },
+            'database': {
+                title: 'Database (MySQL/MariaDB)',
+                description: 'We use robust relational databases like MySQL/MariaDB to securely store and manage all your critical business data for  KD NexCore ERP.'
+            },
+            'firebase': {
+                title: 'Firebase',
+                description: 'A platform by Google for creating mobile and web applications. We use it for real-time data, authentication, and hosting integrations.'
+            },
+            'nodejs': {
+                title: 'Node.js',
+                description: 'A backend JavaScript runtime. Used for building fast, scalable network applications and handling server-side logic for integrations.'
+            },
+            'react': {
+                title: 'React',
+                description: 'A popular JavaScript library for building user interfaces. We use it to create modern, fast, and dynamic single-page applications.'
+            },
+            'redis': {
+                title: 'Redis',
+                description: 'An in-memory data structure store, used as a database, cache, and message broker. Essential for high-performance applications and background jobs.'
+            }
+        };
+
+        const techIcons = document.querySelectorAll('#technology [data-tech]');
+        const techTitle = document.getElementById('tech-title');
+        const techDescription = document.getElementById('tech-description');
+
+        if (techIcons.length > 0 && techTitle && techDescription) {
+            
+            // Set initial active state on Frappe
+            const frappeIcon = document.querySelector('[data-tech="frappe"]');
+            if(frappeIcon) {
+                frappeIcon.classList.add('active-tech');
+            }
+
+            techIcons.forEach(icon => {
+                icon.addEventListener('click', () => {
+                    const techKey = icon.dataset.tech;
+                    const content = techDescriptions[techKey];
+
+                    if (content) {
+                        // Update content
+                        techTitle.textContent = content.title;
+                        techDescription.textContent = content.description;
+
+                        // Update active state
+                        techIcons.forEach(i => i.classList.remove('active-tech'));
+                        icon.classList.add('active-tech');
+                    }
+                });
+                
+                // Add keyboard accessibility
+                icon.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        icon.click();
+                    }
+                });
+            });
+        }
+        // --- End of Technology Stack Interaction ---
+
+        // --- Blog Modal Logic ---
+        const blogPosts = {
+            post1: {
+                date: 'Dec 18, 2024',
+                title: 'Why  KD NexCore ERP is the Future for SMEs',
+                image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3',
+                html: `
+                    <p> KD NexCore ERP offers SMEs enterprise-grade capabilities at a fraction of the cost. With built-in modules for accounting, inventory, CRM, projects, and HR, teams can standardize processes without costly custom software.</p>
+                    <h4>Key benefits</h4>
+                    <ul>
+                        <li>Lower total cost of ownership</li>
+                        <li>Faster time-to-value with prebuilt modules</li>
+                        <li>Open-source flexibility and transparency</li>
+                    </ul>
+                    <p>For growing companies,  KD NexCore ERP modular approach and upgrade-friendly customizations make it a future-proof choice.</p>
+                `
+            },
+            post2: {
+                date: 'Nov 05, 2024',
+                title: 'Top 5 Automation Trends for 2026',
+                image: 'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3',
+                html: `
+                    <ol>
+                        <li><strong>AI copilots</strong> inside ERP workflows</li>
+                        <li><strong>RPA</strong> for repetitive back-office tasks</li>
+                        <li><strong>Event-driven</strong> integrations via webhooks</li>
+                        <li><strong>Chat-first</strong> support automations</li>
+                        <li><strong>Self-serve analytics</strong> for non-technical teams</li>
+                    </ol>
+                    <p>The winners will pair automation with measurable KPIs tied to throughput and SLA improvements.</p>
+                `
+            },
+            post3: {
+                date: 'Oct 12, 2024',
+                title: 'Cloud Deployment vs. On-Premise',
+                image: 'https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3',
+                html: `
+                    <p>Choosing between cloud and on-prem depends on compliance, latency, and budget. Cloud offers scalability and managed ops; on-prem provides full control and data residency.</p>
+                    <p>Hybrid models using managed databases and on-prem app servers can balance both worlds.</p>
+                `
+            },
+            post4: {
+                date: 'Sep 22, 2024',
+                title: ' KD NexCore ERP Implementation: A Practical Guide',
+                image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3',
+                html: `
+                    <h4>Milestones</h4>
+                    <ul>
+                        <li>Discovery & requirements mapping</li>
+                        <li>Configuration & data migration</li>
+                        <li>UAT, training, and cutover</li>
+                    </ul>
+                    <p>Define success metrics early (e.g., order cycle time, inventory accuracy) to track ROI post go-live.</p>
+                `
+            },
+            post5: {
+                date: 'Aug 15, 2024',
+                title: 'Customizing  KD NexCore ERP the Right Way',
+                image: 'https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3',
+                html: `
+                    <p>Prefer server scripts, client scripts, and custom fields over core modifications. This keeps upgrades smooth and lowers maintenance.</p>
+                    <p>Use app separation for heavy logic and document your data model decisions.</p>
+                `
+            },
+            post6: {
+                date: 'Jul 02, 2024',
+                title: 'Turning  KD NexCore ERP Data into Decisions',
+                image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3',
+                html: `
+                    <p>Define KPIs per department and build dashboards your leaders actually use. Combine  KD NexCore ERP data with external sources for 360° insights.</p>
+                    <p>Adopt a data cadence—weekly reviews to close the loop on actions.</p>
+                `
+            }
+        };
+
+        const modalEl = document.getElementById('blog-modal');
+        const overlayEl = document.getElementById('blog-overlay');
+        const closeBtn = document.getElementById('blog-close');
+        const modalDate = document.getElementById('modal-date');
+        const modalTitle = document.getElementById('modal-title');
+        const modalImage = document.getElementById('modal-image');
+        const modalContent = document.getElementById('modal-content');
+
+        function openBlogModal(postKey) {
+            const post = blogPosts[postKey];
+            if (!post) return;
+            modalDate.textContent = post.date;
+            modalTitle.textContent = post.title;
+            modalImage.src = post.image;
+            modalContent.innerHTML = post.html;
+            modalEl.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeBlogModal() {
+            modalEl.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        document.querySelectorAll('[data-blog-id]').forEach(btn => {
+            btn.addEventListener('click', () => openBlogModal(btn.getAttribute('data-blog-id')));
+        });
+        if (overlayEl) overlayEl.addEventListener('click', closeBlogModal);
+        if (closeBtn) closeBtn.addEventListener('click', closeBlogModal);
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modalEl.classList.contains('hidden')) closeBlogModal(); });
+        // --- End Blog Modal Logic ---
+    </script>
+
+</body>
+</html>
+
